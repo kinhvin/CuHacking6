@@ -41,10 +41,10 @@ const LaunchPage = () => {
           
           <div className="nav-buttons">
             <button className="nav-btn nav-login">
-              <Link to="/sign-in" style={{color: 'inherit', textDecoration: 'none'}}>Log in</Link>
+              <Link to="/main-menu" style={{color: 'inherit', textDecoration: 'none'}}>Log in</Link>
             </button>
             <button className="nav-btn nav-signup">
-              <Link to="/sign-up" style={{color: 'inherit', textDecoration: 'none'}}>Sign up</Link>
+              <Link to="/sign-in" style={{color: 'inherit', textDecoration: 'none'}}>Sign up</Link>
             </button>
           </div>
         </div>
