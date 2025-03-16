@@ -135,7 +135,7 @@ const LaunchPage = () => {
       </div>
 
       <footer>
-        <p>© 2025 Spotimates • Privacy Policy • Terms of Service</p>
+        <p>CuHacking6 • Kevin, Jason, Jaspreet and Michael</p>
       </footer>
     </div>
   );
