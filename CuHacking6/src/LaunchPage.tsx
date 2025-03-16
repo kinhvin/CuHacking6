@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './LaunchPage.css';
+import { spotifyAuthService } from './services/spotifyAuth';
 
 const LaunchPage = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -66,14 +67,12 @@ const LaunchPage = () => {
         </div>
         
         <div className="cta-buttons">
-          <button className="btn login-btn">
-            <Link to="/sign-up" style={{color: 'inherit', textDecoration: 'none'}}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: "10px"}}>
-                <path d="M12 5v14M5 12h14"></path>
-              </svg>
-              Connect with Spotify
-            </Link>
-          </button>
+        <button className="btn login-btn" onClick={() => window.location.href = spotifyAuthService.getAuthUrl()}>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: "10px"}}>
+           <path d="M12 5v14M5 12h14"></path>
+           </svg>
+           Connect with Spotify
+        </button>
           <button className="btn signup-btn">
             <Link to="/sign-in" style={{color: 'inherit', textDecoration: 'none'}}>Sign in to your account</Link>
           </button>
