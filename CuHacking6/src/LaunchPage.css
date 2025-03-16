@@ -55,13 +55,12 @@ body {
   align-items: center;
   font-size: 22px;
   font-weight: 700;
-  letter-spacing: -0.5px;
-}
-
-.nav-logo .music-icon {
   color: #1DB954;
-  margin-right: 8px;
-  font-size: 24px;
+  letter-spacing: -0.5px;
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Edge/IE */
 }
 
 .nav-menu {
@@ -125,42 +124,6 @@ body {
   color: white;
   font-size: 24px;
   cursor: pointer;
-}
-
-/* Background animation */
-.background-animation {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  opacity: 0.5;
-}
-
-.waveform {
-  width: 3px;
-  background-color: #1DB954;
-  opacity: 0.15;
-  border-radius: 20px;
-  transform-origin: bottom;
-  animation: continuous-wave 1.5s ease-in-out infinite;
-}
-
-@keyframes continuous-wave {
-  0% {
-    transform: scaleY(1);
-    opacity: 0.15;
-  }
-  50% {
-    transform: scaleY(3.5);
-    opacity: 0.4;
-  }
-  100% {
-    transform: scaleY(1);
-    opacity: 0.15;
-  }
 }
 
 /* Content */
@@ -290,7 +253,6 @@ h1 {
 }
 
 .feature-icon {
-  font-size: 32px;
   margin-bottom: 20px;
   background: rgba(29, 185, 84, 0.1);
   width: 64px;
@@ -299,6 +261,12 @@ h1 {
   align-items: center;
   justify-content: center;
   border-radius: 12px;
+}
+
+.feature-svg {
+  width: 32px;
+  height: 32px;
+  color: #1DB954; /* Matches the green theme; adjust if desired */
 }
 
 .feature h3 {
