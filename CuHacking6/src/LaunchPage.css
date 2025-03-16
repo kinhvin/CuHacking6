@@ -108,15 +108,6 @@ body {
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-.nav-signup {
-  background-color: #1DB954;
-  color: #ffffff;
-}
-
-.nav-signup:hover {
-  background-color: #1ED760;
-}
-
 .mobile-menu-btn {
   display: none;
   background: none;
@@ -200,18 +191,6 @@ h1 {
   background-color: #1ED760;
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(29, 185, 84, 0.35);
-}
-
-.signup-btn {
-  background-color: rgba(255, 255, 255, 0.08);
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.signup-btn:hover {
-  background-color: rgba(255, 255, 255, 0.12);
-  transform: translateY(-2px);
-  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .btn a {

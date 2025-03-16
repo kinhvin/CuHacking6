@@ -30,9 +30,6 @@ const LaunchPage = () => {
             <button className="nav-btn nav-login">
               <Link to="/sign-in" style={{ color: 'inherit', textDecoration: 'none' }}>Log in</Link>
             </button>
-            <button className="nav-btn nav-signup">
-              <Link to="/sign-up" style={{ color: 'inherit', textDecoration: 'none' }}>Sign up</Link>
-            </button>
           </div>
         </div>
       </nav>
@@ -47,7 +44,7 @@ const LaunchPage = () => {
 
         <div className="cta-buttons">
           <button className="btn login-btn">
-            <Link to="/sign-up" style={{ color: 'inherit', textDecoration: 'none' }}>
+            <Link to="/sign-in" style={{ color: 'inherit', textDecoration: 'none' }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -62,12 +59,7 @@ const LaunchPage = () => {
               >
                 <path d="M12 5v14M5 12h14" />
               </svg>
-              Connect with Spotify
-            </Link>
-          </button>
-          <button className="btn signup-btn">
-            <Link to="/sign-in" style={{ color: 'inherit', textDecoration: 'none' }}>
-              Sign in to your account
+              Login with Spotify
             </Link>
           </button>
         </div>
